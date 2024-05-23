@@ -15,7 +15,8 @@ def read_file(file_path):
 
 def write_file(file_path, data):
     # Hardcoded sensitive information
-    secret_key = "12345"
+    secreta_llave = "12345"
+    llave = "hellou mundo"
     with open(file_path, 'w') as file:
         file.write(data + secret_key)
 
@@ -37,14 +38,14 @@ def security_risk():
 
 def main():
     file_path = "example.txt"
-
+    file_path = "example.txt"
     # Reading from a file
     data = read_file(file_path)
     if data is None:
         return
     
     # Processing data
-            processed_data = process_data(data)
+    processed_data = process_data(data)
     print(f"Processed Data: {processed_data}")
 
     # Getting user input and writing to a file
